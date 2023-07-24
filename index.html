@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./libs/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.css">
+    <link rel="stylesheet" href="./css/flexslider.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <div class="page-wrap desktop">
+
+        <section class="section-donation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <h2>Сделать пожертвование</h2>
+
+                        <div class="yel-sm-line"></div>
+
+                    </div>
+                    <div class="col-12 col-lg-10 offset-0 col-xl-8 offset-lg-1 offset-xl-2">
+
+                        <form method='POST' action='https://demo.paykeeper.ru/create/' >
+                            <input type="hidden" name="service_name" value="Пожертвование">
+                            <input type="hidden" name="user_result_callback" value="https://open-sales.ru/">
+                            <!-- Сумма -->
+                            <div class="input-wrapper">
+                                <input type="text" class="h-place" name="sum" placeholder="Сумма" required autocomplete="off" />
+                                <span class="invalid">Обязательное поле</span>
+                                <span class="placeholder">
+                                    Сумма <span class="star">*</span>
+                                </span>
+                            </div>
+                            <div class="sum-wrapper">
+                                <div class="sum-item" data-sum="100">100</div>
+                                <div class="sum-item" data-sum="300">300</div>
+                                <div class="sum-item" data-sum="500">500</div>
+                                <div class="sum-item" data-sum="1000">1000</div>
+                            </div>
+                            <!-- Электронная почта -->
+                            <div class="input-wrapper">
+                                <input type="email" class="h-place" name="client_email" placeholder="Электронная почта" required />
+                                <span class="invalid">Обязательное поле</span>
+                                <span class="placeholder">
+                                    Электронная почта <span class="star">*</span>
+                                </span>
+                            </div>
+                            <!-- Номер телефона -->
+                            <div class="input-wrapper">
+                                <input type="phone" class="h-place" name="client_phone" placeholder="Номер телефона" required />
+                                <span class="invalid">Обязательное поле</span>
+                                <span class="placeholder">
+                                    Номер телефона <span class="star">*</span>
+                                </span>
+                            </div>
+                            <!-- Кнопка оплаты -->
+                            <div class="btn-wrapper">
+                                <button type="submit" class="yel-btn">Пожертвовать</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./libs/jquery-mask/jquery.mask.js"></script>
+    <script src="./libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="./js/jquery.flexslider-min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>
